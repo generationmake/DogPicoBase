@@ -1,0 +1,1944 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ArduHMI Shield"
+Date "2020-08-31"
+Rev "1.3"
+Comp "generationmake"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2."
+$EndDescr
+NoConn ~ 10500 1550
+NoConn ~ 10500 1650
+NoConn ~ 10500 1750
+Text Label 9950 1950 0    60   ~ 0
+ARDU_CLK_1
+Text Label 9950 2050 0    60   ~ 0
+ARDU_CS_1
+Text Label 9950 2150 0    60   ~ 0
+ARDU_SI_1
+Text Label 9950 2450 0    60   ~ 0
+ARDU_A0
+Text Label 9950 2350 0    60   ~ 0
+ARDU_RESET
+Text Label 9950 2250 0    60   ~ 0
+DISPLAY_BL
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR026
+U 1 1 5B0B4087
+P 10300 1650
+F 0 "#PWR026" H 10300 1400 50  0001 C CNN
+F 1 "GND" H 10300 1500 50  0000 C CNN
+F 2 "" H 10300 1650 50  0000 C CNN
+F 3 "" H 10300 1650 50  0000 C CNN
+	1    10300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR028
+U 1 1 5B0B41D5
+P 10400 5800
+F 0 "#PWR028" H 10400 5550 50  0001 C CNN
+F 1 "GND" H 10400 5650 50  0000 C CNN
+F 2 "" H 10400 5800 50  0000 C CNN
+F 3 "" H 10400 5800 50  0000 C CNN
+	1    10400 5800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10500 4650
+NoConn ~ 10500 4950
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR025
+U 1 1 5B0B43B5
+P 10250 4500
+F 0 "#PWR025" H 10250 4350 50  0001 C CNN
+F 1 "+5V" H 10250 4640 50  0000 C CNN
+F 2 "" H 10250 4500 50  0000 C CNN
+F 3 "" H 10250 4500 50  0000 C CNN
+	1    10250 4500
+	1    0    0    -1  
+$EndComp
+Text Label 9850 3550 0    60   ~ 0
+ENC_SW
+Text Label 9850 3650 0    60   ~ 0
+ENC_B
+Text Label 9850 3750 0    60   ~ 0
+ENC_A
+Text Label 9850 4050 0    60   ~ 0
+KEYPAD_A0
+Text Notes 500  650  0    47   ~ 0
+Copyright generationmake 2020\nsee full project documentation at https://github.com/generationmake/ArduHMIShield
+$Comp
+L ArduHMIShield-rescue:VIO-ArduHMIShield-rescue #PWR023
+U 1 1 5B4C9C6B
+P 10100 4800
+F 0 "#PWR023" H 10100 4650 50  0001 C CNN
+F 1 "VIO" H 10100 4950 50  0000 C CNN
+F 2 "" H 10100 4800 50  0000 C CNN
+F 3 "" H 10100 4800 50  0000 C CNN
+	1    10100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:VIN-ArduHMIShield-rescue #PWR027
+U 1 1 5B4CB5AB
+P 10350 4250
+F 0 "#PWR027" H 10350 4100 50  0001 C CNN
+F 1 "VIN" H 10350 4400 50  0000 C CNN
+F 2 "" H 10350 4250 50  0000 C CNN
+F 3 "" H 10350 4250 50  0000 C CNN
+	1    10350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C7
+U 1 1 5B6395F1
+P 8100 3200
+F 0 "C7" H 8110 3270 50  0000 L CNN
+F 1 "1uF" H 8110 3120 50  0000 L CNN
+F 2 "capacitors:C_0603" H 8100 3050 50  0001 C CNN
+F 3 "" H 8100 3200 50  0000 C CNN
+	1    8100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C8
+U 1 1 5B63982A
+P 8100 3500
+F 0 "C8" H 8110 3570 50  0000 L CNN
+F 1 "1uF" H 8110 3420 50  0000 L CNN
+F 2 "capacitors:C_0603" H 8100 3350 50  0001 C CNN
+F 3 "" H 8100 3500 50  0000 C CNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR018
+U 1 1 5B639A53
+P 7650 4350
+F 0 "#PWR018" H 7650 4100 50  0001 C CNN
+F 1 "GND" H 7650 4200 50  0000 C CNN
+F 2 "" H 7650 4350 50  0000 C CNN
+F 3 "" H 7650 4350 50  0000 C CNN
+	1    7650 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10500 3050
+NoConn ~ 10500 3150
+NoConn ~ 10500 3250
+NoConn ~ 10500 3350
+NoConn ~ 10500 3950
+NoConn ~ 10500 3850
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R5
+U 1 1 5B63A92B
+P 2100 7000
+F 0 "R5" H 2130 7020 50  0000 L CNN
+F 1 "3k3" H 2130 6960 50  0000 L CNN
+F 2 "resistors:R_0603" H 2100 6850 50  0001 C CNN
+F 3 "" H 2100 7000 50  0000 C CNN
+	1    2100 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R4
+U 1 1 5B63AAA2
+P 2100 6500
+F 0 "R4" H 2130 6520 50  0000 L CNN
+F 1 "1k" H 2130 6460 50  0000 L CNN
+F 2 "resistors:R_0603" H 2100 6350 50  0001 C CNN
+F 3 "" H 2100 6500 50  0000 C CNN
+	1    2100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R3
+U 1 1 5B63AB87
+P 2100 6000
+F 0 "R3" H 2130 6020 50  0000 L CNN
+F 1 "620" H 2130 5960 50  0000 L CNN
+F 2 "resistors:R_0603" H 2100 5850 50  0001 C CNN
+F 3 "" H 2100 6000 50  0000 C CNN
+	1    2100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R2
+U 1 1 5B63AC92
+P 2100 5500
+F 0 "R2" H 2130 5520 50  0000 L CNN
+F 1 "330" H 2130 5460 50  0000 L CNN
+F 2 "resistors:R_0603" H 2100 5350 50  0001 C CNN
+F 3 "" H 2100 5500 50  0000 C CNN
+	1    2100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R1
+U 1 1 5B63AD92
+P 2100 5000
+F 0 "R1" H 2130 5020 50  0000 L CNN
+F 1 "2k" H 2130 4960 50  0000 L CNN
+F 2 "resistors:R_0603" H 2100 4850 50  0001 C CNN
+F 3 "" H 2100 5000 50  0000 C CNN
+	1    2100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:VIO-ArduHMIShield-rescue #PWR07
+U 1 1 5B63AF24
+P 2100 4850
+F 0 "#PWR07" H 2100 4700 50  0001 C CNN
+F 1 "VIO" H 2100 5000 50  0000 C CNN
+F 2 "" H 2100 4850 50  0000 C CNN
+F 3 "" H 2100 4850 50  0000 C CNN
+	1    2100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR01
+U 1 1 5B63B0A9
+P 650 5400
+F 0 "#PWR01" H 650 5150 50  0001 C CNN
+F 1 "GND" H 650 5250 50  0000 C CNN
+F 2 "" H 650 5400 50  0000 C CNN
+F 3 "" H 650 5400 50  0000 C CNN
+	1    650  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR02
+U 1 1 5B63B132
+P 650 5900
+F 0 "#PWR02" H 650 5650 50  0001 C CNN
+F 1 "GND" H 650 5750 50  0000 C CNN
+F 2 "" H 650 5900 50  0000 C CNN
+F 3 "" H 650 5900 50  0000 C CNN
+	1    650  5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR03
+U 1 1 5B63B1DF
+P 650 6400
+F 0 "#PWR03" H 650 6150 50  0001 C CNN
+F 1 "GND" H 650 6250 50  0000 C CNN
+F 2 "" H 650 6400 50  0000 C CNN
+F 3 "" H 650 6400 50  0000 C CNN
+	1    650  6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR04
+U 1 1 5B63B220
+P 650 6900
+F 0 "#PWR04" H 650 6650 50  0001 C CNN
+F 1 "GND" H 650 6750 50  0000 C CNN
+F 2 "" H 650 6900 50  0000 C CNN
+F 3 "" H 650 6900 50  0000 C CNN
+	1    650  6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR05
+U 1 1 5B63B261
+P 650 7400
+F 0 "#PWR05" H 650 7150 50  0001 C CNN
+F 1 "GND" H 650 7250 50  0000 C CNN
+F 2 "" H 650 7400 50  0000 C CNN
+F 3 "" H 650 7400 50  0000 C CNN
+	1    650  7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1850 10400 1850
+Wire Wire Line
+	10500 4350 10400 4350
+Wire Wire Line
+	10400 4350 10400 4450
+Wire Wire Line
+	10500 4450 10400 4450
+Connection ~ 10400 4450
+Wire Wire Line
+	10500 4250 10350 4250
+Wire Wire Line
+	10500 4550 10250 4550
+Wire Wire Line
+	10250 4550 10250 4500
+Wire Wire Line
+	9750 3550 10500 3550
+Wire Wire Line
+	9750 3650 10500 3650
+Wire Wire Line
+	9750 3750 10500 3750
+Wire Wire Line
+	9750 4050 10500 4050
+Wire Wire Line
+	10500 4850 10100 4850
+Wire Wire Line
+	10100 4850 10100 4800
+Wire Wire Line
+	1350 5200 1450 5200
+Connection ~ 1450 5200
+Wire Wire Line
+	1450 7300 1350 7300
+Wire Wire Line
+	1350 7200 1450 7200
+Connection ~ 1450 7200
+Wire Wire Line
+	750  7200 650  7200
+Wire Wire Line
+	650  7200 650  7300
+Wire Wire Line
+	750  6700 650  6700
+Wire Wire Line
+	650  6700 650  6800
+Wire Wire Line
+	750  6800 650  6800
+Connection ~ 650  6800
+Wire Wire Line
+	750  7300 650  7300
+Connection ~ 650  7300
+Wire Wire Line
+	1350 6800 1450 6800
+Wire Wire Line
+	1350 6700 1450 6700
+Connection ~ 1450 6700
+Wire Wire Line
+	750  5200 650  5200
+Wire Wire Line
+	650  5200 650  5300
+Wire Wire Line
+	750  5700 650  5700
+Wire Wire Line
+	650  5700 650  5800
+Wire Wire Line
+	750  6200 650  6200
+Wire Wire Line
+	650  6200 650  6300
+Wire Wire Line
+	750  6300 650  6300
+Connection ~ 650  6300
+Wire Wire Line
+	750  5800 650  5800
+Connection ~ 650  5800
+Wire Wire Line
+	750  5300 650  5300
+Connection ~ 650  5300
+Wire Wire Line
+	1350 5300 1450 5300
+Wire Wire Line
+	1350 5700 1450 5700
+Connection ~ 1450 5700
+Wire Wire Line
+	1350 5800 1450 5800
+Wire Wire Line
+	1350 6200 1450 6200
+Connection ~ 1450 6200
+Wire Wire Line
+	1350 6300 1450 6300
+Text Label 1350 5200 0    60   ~ 0
+KEYPAD_A0
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R7
+U 1 1 5B63C41E
+P 6750 4900
+F 0 "R7" H 6780 4920 50  0000 L CNN
+F 1 "30" H 6780 4860 50  0000 L CNN
+F 2 "resistors:R_0603" H 6750 4750 50  0001 C CNN
+F 3 "" H 6750 4900 50  0000 C CNN
+	1    6750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R6
+U 1 1 5B63C5FD
+P 6450 4900
+F 0 "R6" H 6480 4920 50  0000 L CNN
+F 1 "30" H 6480 4860 50  0000 L CNN
+F 2 "resistors:R_0603" H 6450 4750 50  0001 C CNN
+F 3 "" H 6450 4900 50  0000 C CNN
+	1    6450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:VIO-ArduHMIShield-rescue #PWR017
+U 1 1 5B63C75B
+P 7450 4900
+F 0 "#PWR017" H 7450 4750 50  0001 C CNN
+F 1 "VIO" H 7450 5050 50  0000 C CNN
+F 2 "" H 7450 4900 50  0000 C CNN
+F 3 "" H 7450 4900 50  0000 C CNN
+	1    7450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:Q_NMOS_GSD-ArduHMIShield-rescue Q1
+U 1 1 5B63CAC6
+P 7150 5300
+F 0 "Q1" H 7450 5350 50  0000 R CNN
+F 1 "2N7002" H 7800 5250 50  0000 R CNN
+F 2 "SOT_TO:SOT-23" H 7350 5400 50  0001 C CNN
+F 3 "" H 7150 5300 50  0000 C CNN
+	1    7150 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R9
+U 1 1 5B63CC9C
+P 7450 5100
+F 0 "R9" H 7480 5120 50  0000 L CNN
+F 1 "1k" H 7480 5060 50  0000 L CNN
+F 2 "resistors:R_0603" H 7450 4950 50  0001 C CNN
+F 3 "" H 7450 5100 50  0000 C CNN
+	1    7450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR016
+U 1 1 5B63CEC4
+P 7150 4600
+F 0 "#PWR016" H 7150 4450 50  0001 C CNN
+F 1 "+5V" H 7150 4740 50  0000 C CNN
+F 2 "" H 7150 4600 50  0000 C CNN
+F 3 "" H 7150 4600 50  0000 C CNN
+	1    7150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR015
+U 1 1 5B63D119
+P 7050 5600
+F 0 "#PWR015" H 7050 5350 50  0001 C CNN
+F 1 "GND" H 7050 5450 50  0000 C CNN
+F 2 "" H 7050 5600 50  0000 C CNN
+F 3 "" H 7050 5600 50  0000 C CNN
+	1    7050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5500 7050 5600
+Wire Wire Line
+	8150 5300 7450 5300
+Wire Wire Line
+	7450 5200 7450 5300
+Connection ~ 7450 5300
+Wire Wire Line
+	7450 5000 7450 4900
+Text Label 7600 5300 0    60   ~ 0
+DISPLAY_BL
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR014
+U 1 1 5B63E57C
+P 8050 6100
+F 0 "#PWR014" H 8050 5850 50  0001 C CNN
+F 1 "GND" H 8050 5950 50  0000 C CNN
+F 2 "" H 8050 6100 50  0000 C CNN
+F 3 "" H 8050 6100 50  0000 C CNN
+	1    8050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4750 10500 4750
+Text Label 10200 4750 0    60   ~ 0
+RESET
+Wire Wire Line
+	9400 5900 8800 5900
+Wire Wire Line
+	8750 6000 8800 6000
+Wire Wire Line
+	8800 6000 8800 5900
+Connection ~ 8800 5900
+Wire Wire Line
+	8150 5900 8050 5900
+Wire Wire Line
+	8050 5900 8050 6000
+Wire Wire Line
+	8150 6000 8050 6000
+Connection ~ 8050 6000
+Text Label 8900 5900 0    60   ~ 0
+RESET
+Wire Wire Line
+	1450 5200 2100 5200
+Wire Wire Line
+	1450 5200 1450 5300
+Wire Wire Line
+	1450 7200 1450 7300
+Wire Wire Line
+	650  6800 650  6900
+Wire Wire Line
+	650  7300 650  7400
+Wire Wire Line
+	1450 6700 1450 6800
+Wire Wire Line
+	650  6300 650  6400
+Wire Wire Line
+	650  5800 650  5900
+Wire Wire Line
+	650  5300 650  5400
+Wire Wire Line
+	1450 5700 1450 5800
+Wire Wire Line
+	1450 6200 1450 6300
+Wire Wire Line
+	7450 5300 7350 5300
+Wire Wire Line
+	8800 5900 8750 5900
+Wire Wire Line
+	8050 6000 8050 6100
+$Comp
+L displays:EA_DOGM128-6 DIS1
+U 1 1 5BB541AB
+P 6250 4000
+F 0 "DIS1" H 6325 5037 60  0000 C CNN
+F 1 "EA_DOGM128-6" H 6325 4931 60  0000 C CNN
+F 2 "displays:EA_DOGM128" H 6250 4550 60  0001 C CNN
+F 3 "" H 6250 4000 60  0000 C CNN
+	1    6250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR013
+U 1 1 5BB544C0
+P 4900 3250
+F 0 "#PWR013" H 4900 3100 50  0001 C CNN
+F 1 "+3V3" V 4915 3378 50  0000 L CNN
+F 2 "" H 4900 3250 50  0000 C CNN
+F 3 "" H 4900 3250 50  0000 C CNN
+	1    4900 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C9
+U 1 1 5BB54AD8
+P 8100 3900
+F 0 "C9" H 8110 3970 50  0000 L CNN
+F 1 "1uF" H 8110 3820 50  0000 L CNN
+F 2 "capacitors:C_0603" H 8100 3750 50  0001 C CNN
+F 3 "" H 8100 3900 50  0000 C CNN
+	1    8100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R8
+U 1 1 5BB5541F
+P 7050 4900
+F 0 "R8" H 7080 4920 50  0000 L CNN
+F 1 "30" H 7080 4860 50  0000 L CNN
+F 2 "resistors:R_0603" H 7050 4750 50  0001 C CNN
+F 3 "" H 7050 4900 50  0000 C CNN
+	1    7050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4150 7650 4150
+Wire Wire Line
+	7650 4150 7650 4250
+Wire Wire Line
+	7550 4250 7650 4250
+Connection ~ 7650 4250
+Wire Wire Line
+	7650 4250 7650 4350
+Wire Wire Line
+	8100 4050 8100 4000
+Wire Wire Line
+	8100 3750 8100 3800
+Wire Wire Line
+	8100 3650 8100 3600
+Wire Wire Line
+	8100 3300 8100 3350
+Connection ~ 8100 3350
+Wire Wire Line
+	8100 3350 8100 3400
+Wire Wire Line
+	8100 3100 8100 3050
+Wire Wire Line
+	7650 3050 7650 3250
+Wire Wire Line
+	7650 3250 7550 3250
+Wire Wire Line
+	5100 3250 5000 3250
+Wire Wire Line
+	5100 3350 5000 3350
+Wire Wire Line
+	5000 3350 5000 3250
+Connection ~ 5000 3250
+Wire Wire Line
+	5000 3250 4900 3250
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C6
+U 1 1 5BBADF9D
+P 4700 4450
+F 0 "C6" H 4710 4520 50  0000 L CNN
+F 1 "1uF" H 4710 4370 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4700 4300 50  0001 C CNN
+F 3 "" H 4700 4450 50  0000 C CNN
+	1    4700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C4
+U 1 1 5BBAE187
+P 4400 4450
+F 0 "C4" H 4410 4520 50  0000 L CNN
+F 1 "1uF" H 4410 4370 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4400 4300 50  0001 C CNN
+F 3 "" H 4400 4450 50  0000 C CNN
+	1    4400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C3
+U 1 1 5BBAE1DD
+P 4100 4450
+F 0 "C3" H 4110 4520 50  0000 L CNN
+F 1 "1uF" H 4110 4370 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4100 4300 50  0001 C CNN
+F 3 "" H 4100 4450 50  0000 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C2
+U 1 1 5BBAE22D
+P 3800 4450
+F 0 "C2" H 3810 4520 50  0000 L CNN
+F 1 "1uF" H 3810 4370 50  0000 L CNN
+F 2 "capacitors:C_0603" H 3800 4300 50  0001 C CNN
+F 3 "" H 3800 4450 50  0000 C CNN
+	1    3800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C1
+U 1 1 5BBAE27F
+P 3500 4450
+F 0 "C1" H 3510 4520 50  0000 L CNN
+F 1 "1uF" H 3510 4370 50  0000 L CNN
+F 2 "capacitors:C_0603" H 3500 4300 50  0001 C CNN
+F 3 "" H 3500 4450 50  0000 C CNN
+	1    3500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C5
+U 1 1 5BBAE437
+P 4400 3500
+F 0 "C5" H 4410 3570 50  0000 L CNN
+F 1 "1uF" H 4410 3420 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4400 3350 50  0001 C CNN
+F 3 "" H 4400 3500 50  0000 C CNN
+	1    4400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR06
+U 1 1 5BBAE4F7
+P 3500 4600
+F 0 "#PWR06" H 3500 4350 50  0001 C CNN
+F 1 "GND" H 3500 4450 50  0000 C CNN
+F 2 "" H 3500 4600 50  0000 C CNN
+F 3 "" H 3500 4600 50  0000 C CNN
+	1    3500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR08
+U 1 1 5BBAE5BC
+P 3800 4600
+F 0 "#PWR08" H 3800 4350 50  0001 C CNN
+F 1 "GND" H 3800 4450 50  0000 C CNN
+F 2 "" H 3800 4600 50  0000 C CNN
+F 3 "" H 3800 4600 50  0000 C CNN
+	1    3800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR09
+U 1 1 5BBAE605
+P 4100 4600
+F 0 "#PWR09" H 4100 4350 50  0001 C CNN
+F 1 "GND" H 4100 4450 50  0000 C CNN
+F 2 "" H 4100 4600 50  0000 C CNN
+F 3 "" H 4100 4600 50  0000 C CNN
+	1    4100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR010
+U 1 1 5BBAE64E
+P 4400 4600
+F 0 "#PWR010" H 4400 4350 50  0001 C CNN
+F 1 "GND" H 4400 4450 50  0000 C CNN
+F 2 "" H 4400 4600 50  0000 C CNN
+F 3 "" H 4400 4600 50  0000 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR012
+U 1 1 5BBAE697
+P 4700 4600
+F 0 "#PWR012" H 4700 4350 50  0001 C CNN
+F 1 "GND" H 4700 4450 50  0000 C CNN
+F 2 "" H 4700 4600 50  0000 C CNN
+F 3 "" H 4700 4600 50  0000 C CNN
+	1    4700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR011
+U 1 1 5BBAE71E
+P 4400 3650
+F 0 "#PWR011" H 4400 3400 50  0001 C CNN
+F 1 "GND" H 4400 3500 50  0000 C CNN
+F 2 "" H 4400 3650 50  0000 C CNN
+F 3 "" H 4400 3650 50  0000 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5050 5550 4550
+Wire Wire Line
+	5650 5050 5650 4550
+Wire Wire Line
+	5750 5050 5750 4550
+Wire Wire Line
+	5850 5050 5850 4550
+Wire Wire Line
+	6150 5050 6150 4550
+Wire Wire Line
+	4700 4250 4700 4350
+Wire Wire Line
+	4400 4150 4400 4350
+Wire Wire Line
+	4100 4050 4100 4350
+Wire Wire Line
+	3800 3950 3800 4350
+Wire Wire Line
+	3500 3850 3500 4350
+Wire Wire Line
+	3500 4550 3500 4600
+Wire Wire Line
+	3800 4550 3800 4600
+Wire Wire Line
+	4100 4600 4100 4550
+Wire Wire Line
+	4400 4550 4400 4600
+Wire Wire Line
+	4700 4600 4700 4550
+Wire Wire Line
+	4650 3550 4650 3350
+Wire Wire Line
+	4650 3350 4400 3350
+Wire Wire Line
+	4400 3350 4400 3400
+Wire Wire Line
+	4400 3600 4400 3650
+Text Label 4700 4250 0    60   ~ 0
+DIS_V0
+Text Label 4700 4150 0    60   ~ 0
+DIS_V1
+Text Label 4700 4050 0    60   ~ 0
+DIS_V2
+Text Label 4700 3950 0    60   ~ 0
+DIS_V3
+Text Label 4700 3850 0    60   ~ 0
+DIS_V4
+Text Label 4700 3550 0    60   ~ 0
+DIS_VOUT
+Text Label 5550 5000 1    60   ~ 0
+DIS_SI
+Text Label 5650 5000 1    60   ~ 0
+DIS_CLK
+Text Label 5750 5000 1    60   ~ 0
+DIS_A0
+Text Label 5850 5000 1    60   ~ 0
+DIS_CS
+Text Label 6150 5000 1    60   ~ 0
+DIS_RESET
+Wire Wire Line
+	4700 4250 5100 4250
+Wire Wire Line
+	4400 4150 5100 4150
+Wire Wire Line
+	4100 4050 5100 4050
+Wire Wire Line
+	3800 3950 5100 3950
+Wire Wire Line
+	3500 3850 5100 3850
+Wire Wire Line
+	7050 5000 7050 5050
+Wire Wire Line
+	7050 5050 6750 5050
+Wire Wire Line
+	6450 5050 6450 5000
+Connection ~ 7050 5050
+Wire Wire Line
+	7050 5050 7050 5100
+Wire Wire Line
+	6450 4800 6450 4550
+Wire Wire Line
+	6750 4800 6750 4550
+Wire Wire Line
+	7050 4550 7050 4800
+Wire Wire Line
+	6750 5000 6750 5050
+Connection ~ 6750 5050
+Wire Wire Line
+	6750 5050 6450 5050
+Text Label 6450 4800 1    60   ~ 0
+DIS_C3
+Text Label 6750 4800 1    60   ~ 0
+DIS_C2
+Text Label 7050 4800 1    60   ~ 0
+DIS_C1
+Wire Wire Line
+	6350 4550 6350 4650
+Wire Wire Line
+	6350 4650 6650 4650
+Wire Wire Line
+	7150 4650 7150 4600
+Wire Wire Line
+	6950 4550 6950 4650
+Connection ~ 6950 4650
+Wire Wire Line
+	6950 4650 7150 4650
+Wire Wire Line
+	6650 4550 6650 4650
+Connection ~ 6650 4650
+Wire Wire Line
+	6650 4650 6950 4650
+Text Label 7600 4050 0    60   ~ 0
+DIS_CAP2N
+Text Label 7600 3750 0    60   ~ 0
+DIS_CAP2P
+Text Label 7600 3650 0    60   ~ 0
+DIS_CAP1P
+Text Label 7600 3350 0    60   ~ 0
+DIS_CAP1N
+Text Label 7700 3050 0    60   ~ 0
+DIS_CAP3P
+Wire Wire Line
+	7650 3050 8100 3050
+Wire Wire Line
+	7550 3350 8100 3350
+Wire Wire Line
+	7550 3650 8100 3650
+Wire Wire Line
+	7550 3750 8100 3750
+Wire Wire Line
+	7550 4050 8100 4050
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR021
+U 1 1 5BCEEEB0
+P 3600 2150
+F 0 "#PWR021" H 3600 1900 50  0001 C CNN
+F 1 "GND" H 3600 2000 50  0000 C CNN
+F 2 "" H 3600 2150 50  0000 C CNN
+F 3 "" H 3600 2150 50  0000 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR020
+U 1 1 5BCEEED4
+P 3100 2400
+F 0 "#PWR020" H 3100 2250 50  0001 C CNN
+F 1 "+5V" H 3100 2540 50  0000 C CNN
+F 2 "" H 3100 2400 50  0000 C CNN
+F 3 "" H 3100 2400 50  0000 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR019
+U 1 1 5BCEEEE2
+P 850 1050
+F 0 "#PWR019" H 850 900 50  0001 C CNN
+F 1 "+3V3" V 865 1178 50  0000 L CNN
+F 2 "" H 850 1050 50  0000 C CNN
+F 3 "" H 850 1050 50  0000 C CNN
+	1    850  1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 1950 3600 1950
+Wire Wire Line
+	3600 1950 3600 2050
+Wire Wire Line
+	3500 2050 3600 2050
+Connection ~ 3600 2050
+Wire Wire Line
+	3600 2050 3600 2150
+Wire Wire Line
+	1050 1050 950  1050
+Wire Wire Line
+	1050 1150 950  1150
+Wire Wire Line
+	950  1150 950  1050
+Connection ~ 950  1050
+Wire Wire Line
+	950  1050 850  1050
+Wire Wire Line
+	1500 2850 1500 2350
+Wire Wire Line
+	1600 2850 1600 2350
+Wire Wire Line
+	1700 2850 1700 2350
+Wire Wire Line
+	1800 2850 1800 2350
+Wire Wire Line
+	2100 2850 2100 2350
+Text Label 650  2050 0    60   ~ 0
+DIS_V0
+Text Label 650  1950 0    60   ~ 0
+DIS_V1
+Text Label 650  1850 0    60   ~ 0
+DIS_V2
+Text Label 650  1750 0    60   ~ 0
+DIS_V3
+Text Label 650  1650 0    60   ~ 0
+DIS_V4
+Text Label 650  1350 0    60   ~ 0
+DIS_VOUT
+Text Label 1500 2800 1    60   ~ 0
+DIS_SI
+Text Label 1600 2800 1    60   ~ 0
+DIS_CLK
+Text Label 1700 2800 1    60   ~ 0
+DIS_A0
+Text Label 1800 2800 1    60   ~ 0
+DIS_CS
+Text Label 2100 2800 1    60   ~ 0
+DIS_RESET
+Wire Wire Line
+	650  2050 1050 2050
+Wire Wire Line
+	2700 2600 2700 2350
+Wire Wire Line
+	3000 2350 3000 2600
+Text Label 2700 2600 1    60   ~ 0
+DIS_C2
+Text Label 3000 2600 1    60   ~ 0
+DIS_C1
+Wire Wire Line
+	3100 2450 3100 2400
+Wire Wire Line
+	2900 2350 2900 2450
+Connection ~ 2900 2450
+Wire Wire Line
+	2900 2450 3100 2450
+Wire Wire Line
+	2600 2350 2600 2450
+Wire Wire Line
+	2600 2450 2900 2450
+Text Label 3550 1850 0    60   ~ 0
+DIS_CAP2N
+Text Label 3550 1550 0    60   ~ 0
+DIS_CAP2P
+Text Label 3550 1450 0    60   ~ 0
+DIS_CAP1P
+Text Label 3550 1150 0    60   ~ 0
+DIS_CAP1N
+Text Label 3550 1050 0    60   ~ 0
+DIS_CAP3P
+Wire Wire Line
+	3500 1150 4050 1150
+Wire Wire Line
+	3500 1450 4050 1450
+Wire Wire Line
+	3500 1550 4050 1550
+Wire Wire Line
+	3500 1850 4050 1850
+Wire Wire Line
+	650  1650 1050 1650
+Wire Wire Line
+	650  1750 1050 1750
+Wire Wire Line
+	650  1850 1050 1850
+Wire Wire Line
+	650  1950 1050 1950
+Wire Wire Line
+	650  1350 1050 1350
+Wire Wire Line
+	3500 1050 4050 1050
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR029
+U 1 1 5BD40D1A
+P 7550 2150
+F 0 "#PWR029" H 7550 1900 50  0001 C CNN
+F 1 "GND" H 7550 2000 50  0000 C CNN
+F 2 "" H 7550 2150 50  0000 C CNN
+F 3 "" H 7550 2150 50  0000 C CNN
+	1    7550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR024
+U 1 1 5BD40D20
+P 7050 2400
+F 0 "#PWR024" H 7050 2250 50  0001 C CNN
+F 1 "+5V" H 7050 2540 50  0000 C CNN
+F 2 "" H 7050 2400 50  0000 C CNN
+F 3 "" H 7050 2400 50  0000 C CNN
+	1    7050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR022
+U 1 1 5BD40D2C
+P 4800 1050
+F 0 "#PWR022" H 4800 900 50  0001 C CNN
+F 1 "+3V3" V 4815 1178 50  0000 L CNN
+F 2 "" H 4800 1050 50  0000 C CNN
+F 3 "" H 4800 1050 50  0000 C CNN
+	1    4800 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 1950 7550 1950
+Wire Wire Line
+	7550 1950 7550 2050
+Wire Wire Line
+	7450 2050 7550 2050
+Connection ~ 7550 2050
+Wire Wire Line
+	7550 2050 7550 2150
+Wire Wire Line
+	5000 1050 4900 1050
+Wire Wire Line
+	5000 1150 4900 1150
+Wire Wire Line
+	4900 1150 4900 1050
+Connection ~ 4900 1050
+Wire Wire Line
+	4900 1050 4800 1050
+Wire Wire Line
+	5450 2850 5450 2350
+Wire Wire Line
+	5550 2850 5550 2350
+Wire Wire Line
+	5650 2850 5650 2350
+Wire Wire Line
+	5750 2850 5750 2350
+Wire Wire Line
+	6050 2850 6050 2350
+Text Label 4600 1350 0    60   ~ 0
+DIS_VOUT
+Text Label 5450 2800 1    60   ~ 0
+DIS_SI
+Text Label 5550 2800 1    60   ~ 0
+DIS_CLK
+Text Label 5650 2800 1    60   ~ 0
+DIS_A0
+Text Label 5750 2800 1    60   ~ 0
+DIS_CS
+Text Label 6050 2800 1    60   ~ 0
+DIS_RESET
+Wire Wire Line
+	6650 2600 6650 2350
+Wire Wire Line
+	6950 2350 6950 2600
+Text Label 6650 2600 1    60   ~ 0
+DIS_C2
+Text Label 6950 2600 1    60   ~ 0
+DIS_C1
+Wire Wire Line
+	7050 2450 7050 2400
+Wire Wire Line
+	6850 2350 6850 2450
+Connection ~ 6850 2450
+Wire Wire Line
+	6850 2450 7050 2450
+Wire Wire Line
+	6550 2350 6550 2450
+Wire Wire Line
+	6550 2450 6850 2450
+Text Label 7500 1850 0    60   ~ 0
+DIS_CAP1N
+Text Label 7500 1550 0    60   ~ 0
+DIS_CAP1P
+Text Label 7500 1450 0    60   ~ 0
+DIS_CAP2N
+Text Label 7500 1150 0    60   ~ 0
+DIS_CAP2P
+Wire Wire Line
+	7450 1150 8000 1150
+Wire Wire Line
+	7450 1450 8000 1450
+Wire Wire Line
+	7450 1550 8000 1550
+Wire Wire Line
+	7450 1850 8000 1850
+Wire Wire Line
+	4600 1350 5000 1350
+$Comp
+L displays:EA_DOGM132-5 DIS2
+U 1 1 5BD4D587
+P 2200 1800
+F 0 "DIS2" H 2275 2837 60  0000 C CNN
+F 1 "EA_DOGM132-5" H 2275 2731 60  0000 C CNN
+F 2 "displays:EA_DOGM081_162_163_132" H 2200 2350 60  0001 C CNN
+F 3 "" H 2200 1800 60  0000 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L displays:EA_DOGS102-6 DIS3
+U 1 1 5BD4D7A8
+P 6150 1800
+F 0 "DIS3" H 6225 2837 60  0000 C CNN
+F 1 "EA_DOGS102-6" H 6225 2731 60  0000 C CNN
+F 2 "displays:EA_DOGS102" H 6150 2350 60  0001 C CNN
+F 3 "" H 6150 1800 60  0000 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+Text Notes 8800 1300 0    60   ~ 0
+Arduino Uno: SCK=13 MOSI=11\nArduino Leonardo: no spi\nArduino Mega: no spi\nArduino M0 pro: SCK=13 MOSI=11\nArduino Zero: SCK=13 MOSI=11\n\n
+$Comp
+L voltage-regulators:LT1117 U1
+U 1 1 5BB72975
+P 1700 3600
+F 0 "U1" H 1700 3987 60  0000 C CNN
+F 1 "AZ1117IH-3.3" H 1700 3881 60  0000 C CNN
+F 2 "SOT_TO:SOT-223" H 1650 3300 60  0001 C CNN
+F 3 "" H 1700 3600 60  0000 C CNN
+	1    1700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C10
+U 1 1 5BB72CE9
+P 700 3650
+F 0 "C10" H 710 3720 50  0000 L CNN
+F 1 "1uF" H 710 3570 50  0000 L CNN
+F 2 "capacitors:C_0603" H 700 3500 50  0001 C CNN
+F 3 "" H 700 3650 50  0000 C CNN
+	1    700  3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C11
+U 1 1 5BB72DA3
+P 2600 3650
+F 0 "C11" H 2610 3720 50  0000 L CNN
+F 1 "1uF" H 2610 3570 50  0000 L CNN
+F 2 "capacitors:C_0603" H 2600 3500 50  0001 C CNN
+F 3 "" H 2600 3650 50  0000 C CNN
+	1    2600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0101
+U 1 1 5BB72E31
+P 2600 3800
+F 0 "#PWR0101" H 2600 3550 50  0001 C CNN
+F 1 "GND" H 2600 3650 50  0000 C CNN
+F 2 "" H 2600 3800 50  0000 C CNN
+F 3 "" H 2600 3800 50  0000 C CNN
+	1    2600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0102
+U 1 1 5BB72E7C
+P 700 3800
+F 0 "#PWR0102" H 700 3550 50  0001 C CNN
+F 1 "GND" H 700 3650 50  0000 C CNN
+F 2 "" H 700 3800 50  0000 C CNN
+F 3 "" H 700 3800 50  0000 C CNN
+	1    700  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR0103
+U 1 1 5BB72F67
+P 2600 3400
+F 0 "#PWR0103" H 2600 3250 50  0001 C CNN
+F 1 "+3V3" V 2615 3528 50  0000 L CNN
+F 2 "" H 2600 3400 50  0000 C CNN
+F 3 "" H 2600 3400 50  0000 C CNN
+	1    2600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR0104
+U 1 1 5BB731D2
+P 700 3450
+F 0 "#PWR0104" H 700 3300 50  0001 C CNN
+F 1 "+5V" H 700 3590 50  0000 C CNN
+F 2 "" H 700 3450 50  0000 C CNN
+F 3 "" H 700 3450 50  0000 C CNN
+	1    700  3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3750 700  3800
+Wire Wire Line
+	700  3550 700  3500
+Wire Wire Line
+	700  3500 1050 3500
+Connection ~ 700  3500
+Wire Wire Line
+	700  3500 700  3450
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0105
+U 1 1 5BB95788
+P 1050 3800
+F 0 "#PWR0105" H 1050 3550 50  0001 C CNN
+F 1 "GND" H 1050 3650 50  0000 C CNN
+F 2 "" H 1050 3800 50  0000 C CNN
+F 3 "" H 1050 3800 50  0000 C CNN
+	1    1050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3800 1050 3650
+Wire Wire Line
+	2600 3800 2600 3750
+Wire Wire Line
+	2600 3550 2600 3500
+Wire Wire Line
+	2600 3500 2450 3500
+Connection ~ 2600 3500
+Wire Wire Line
+	2600 3500 2600 3400
+Wire Wire Line
+	2350 3650 2450 3650
+Wire Wire Line
+	2450 3650 2450 3500
+Connection ~ 2450 3500
+Wire Wire Line
+	2450 3500 2350 3500
+Text Label 1350 5700 0    60   ~ 0
+BUTTON_UP
+Text Label 1350 6200 0    60   ~ 0
+BUTTON_DOWN
+Text Label 1350 6700 0    60   ~ 0
+BUTTON_LEFT
+Text Label 1350 7200 0    60   ~ 0
+BUTTON_SELECT
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0106
+U 1 1 5BBDF9B4
+P 3100 6700
+F 0 "#PWR0106" H 3100 6450 50  0001 C CNN
+F 1 "GND" H 3100 6550 50  0000 C CNN
+F 2 "" H 3100 6700 50  0000 C CNN
+F 3 "" H 3100 6700 50  0000 C CNN
+	1    3100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR0107
+U 1 1 5BBDFA28
+P 4050 5150
+F 0 "#PWR0107" H 4050 5000 50  0001 C CNN
+F 1 "+3V3" V 4065 5278 50  0000 L CNN
+F 2 "" H 4050 5150 50  0000 C CNN
+F 3 "" H 4050 5150 50  0000 C CNN
+	1    4050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:C_0603-ArduHMIShield-rescue C12
+U 1 1 5BBDFAE2
+P 4050 5350
+F 0 "C12" H 4060 5420 50  0000 L CNN
+F 1 "100nF" H 4060 5270 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4050 5200 50  0001 C CNN
+F 3 "" H 4050 5350 50  0000 C CNN
+	1    4050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0108
+U 1 1 5BBDFCD0
+P 4050 5550
+F 0 "#PWR0108" H 4050 5300 50  0001 C CNN
+F 1 "GND" H 4050 5400 50  0000 C CNN
+F 2 "" H 4050 5550 50  0000 C CNN
+F 3 "" H 4050 5550 50  0000 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5850 3150 5850
+Wire Wire Line
+	2450 5950 3150 5950
+Wire Wire Line
+	2450 6050 3150 6050
+Wire Wire Line
+	2450 6150 3150 6150
+Wire Wire Line
+	2450 6250 3150 6250
+Wire Wire Line
+	4450 6250 3750 6250
+Wire Wire Line
+	4450 6150 3750 6150
+Wire Wire Line
+	4450 6050 3750 6050
+Wire Wire Line
+	4450 5950 3750 5950
+Wire Wire Line
+	4450 5850 3750 5850
+Text Label 3900 6250 0    60   ~ 0
+DIS_SI
+Text Label 3900 6150 0    60   ~ 0
+DIS_CLK
+Text Label 3900 6050 0    60   ~ 0
+DIS_A0
+Text Label 3900 5850 0    60   ~ 0
+DIS_CS
+Text Label 3900 5950 0    60   ~ 0
+DIS_RESET
+Text Label 2500 5950 0    60   ~ 0
+ARDU_RESET
+Text Label 2500 5850 0    60   ~ 0
+ARDU_CS
+Text Label 2500 6050 0    60   ~ 0
+ARDU_A0
+Text Label 2500 6150 0    60   ~ 0
+ARDU_CLK
+Text Label 2500 6250 0    60   ~ 0
+ARDU_SI
+NoConn ~ 10500 2950
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R17
+U 1 1 5BD685C3
+P 9500 2850
+F 0 "R17" V 9450 2600 50  0000 L CNN
+F 1 "DNI" V 9550 2950 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2850 50  0000 C CNN
+	1    9500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R16
+U 1 1 5BD6882F
+P 9500 2750
+F 0 "R16" V 9450 2500 50  0000 L CNN
+F 1 "0R" V 9550 2850 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2750 50  0000 C CNN
+	1    9500 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R15
+U 1 1 5BD6888F
+P 9500 2650
+F 0 "R15" V 9450 2400 50  0000 L CNN
+F 1 "DNI" V 9550 2750 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 2500 50  0001 C CNN
+F 3 "" H 9500 2650 50  0000 C CNN
+	1    9500 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2650 9050 2650
+Text Label 9950 2850 0    60   ~ 0
+ARDU_SI_2
+Text Label 9950 2750 0    60   ~ 0
+ARDU_CS_2
+Text Label 9950 2650 0    60   ~ 0
+ARDU_CLK_2
+Text Label 8550 2650 0    60   ~ 0
+ARDU_CLK
+Text Label 8550 2750 0    60   ~ 0
+ARDU_CS
+Text Label 8550 2850 0    60   ~ 0
+ARDU_SI
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R14
+U 1 1 5BE33620
+P 3450 7450
+F 0 "R14" V 3400 7200 50  0000 L CNN
+F 1 "DNI" V 3500 7550 50  0000 L CNN
+F 2 "resistors:R_0603" H 3450 7300 50  0001 C CNN
+F 3 "" H 3450 7450 50  0000 C CNN
+	1    3450 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R13
+U 1 1 5BE56B22
+P 3450 7350
+F 0 "R13" V 3400 7100 50  0000 L CNN
+F 1 "DNI" V 3500 7450 50  0000 L CNN
+F 2 "resistors:R_0603" H 3450 7200 50  0001 C CNN
+F 3 "" H 3450 7350 50  0000 C CNN
+	1    3450 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R12
+U 1 1 5BE68A65
+P 3450 7250
+F 0 "R12" V 3400 7000 50  0000 L CNN
+F 1 "DNI" V 3500 7350 50  0000 L CNN
+F 2 "resistors:R_0603" H 3450 7100 50  0001 C CNN
+F 3 "" H 3450 7250 50  0000 C CNN
+	1    3450 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R11
+U 1 1 5BE68A6D
+P 3450 7150
+F 0 "R11" V 3400 6900 50  0000 L CNN
+F 1 "DNI" V 3500 7250 50  0000 L CNN
+F 2 "resistors:R_0603" H 3450 7000 50  0001 C CNN
+F 3 "" H 3450 7150 50  0000 C CNN
+	1    3450 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R10
+U 1 1 5BE7B2CD
+P 3450 7050
+F 0 "R10" V 3400 6800 50  0000 L CNN
+F 1 "DNI" V 3500 7150 50  0000 L CNN
+F 2 "resistors:R_0603" H 3450 6900 50  0001 C CNN
+F 3 "" H 3450 7050 50  0000 C CNN
+	1    3450 7050
+	0    1    1    0   
+$EndComp
+Text Label 2650 7050 0    60   ~ 0
+ARDU_SI
+Text Label 2650 7150 0    60   ~ 0
+ARDU_CLK
+Text Label 2650 7250 0    60   ~ 0
+ARDU_A0
+Text Label 2650 7350 0    60   ~ 0
+ARDU_CS
+Text Label 2650 7450 0    60   ~ 0
+ARDU_RESET
+Text Label 3700 7450 0    60   ~ 0
+DIS_RESET
+Text Label 3700 7350 0    60   ~ 0
+DIS_CS
+Text Label 3700 7250 0    60   ~ 0
+DIS_A0
+Text Label 3700 7150 0    60   ~ 0
+DIS_CLK
+Text Label 3700 7050 0    60   ~ 0
+DIS_SI
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R20
+U 1 1 5BE8ECB6
+P 9500 2150
+F 0 "R20" V 9450 1900 50  0000 L CNN
+F 1 "0R" V 9550 2250 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 2000 50  0001 C CNN
+F 3 "" H 9500 2150 50  0000 C CNN
+	1    9500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R19
+U 1 1 5BE8ED42
+P 9500 2050
+F 0 "R19" V 9450 1800 50  0000 L CNN
+F 1 "DNI" V 9550 2150 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 1900 50  0001 C CNN
+F 3 "" H 9500 2050 50  0000 C CNN
+	1    9500 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R18
+U 1 1 5BE8EDB2
+P 9500 1950
+F 0 "R18" V 9450 1700 50  0000 L CNN
+F 1 "0R" V 9550 2050 50  0000 L CNN
+F 2 "resistors:R_0603" H 9500 1800 50  0001 C CNN
+F 3 "" H 9500 1950 50  0000 C CNN
+	1    9500 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 1950 9050 1950
+Wire Wire Line
+	9050 1950 9050 2650
+Connection ~ 9050 2650
+Wire Wire Line
+	9050 2650 9400 2650
+Wire Wire Line
+	8500 2750 9150 2750
+Wire Wire Line
+	8500 2850 9250 2850
+Wire Wire Line
+	9400 2050 9150 2050
+Wire Wire Line
+	9150 2050 9150 2750
+Connection ~ 9150 2750
+Wire Wire Line
+	9150 2750 9400 2750
+Wire Wire Line
+	9400 2150 9250 2150
+Wire Wire Line
+	9250 2150 9250 2850
+Connection ~ 9250 2850
+Wire Wire Line
+	9250 2850 9400 2850
+Wire Wire Line
+	10300 1650 10300 1600
+Wire Wire Line
+	10300 1600 10400 1600
+Wire Wire Line
+	10400 1600 10400 1850
+Wire Wire Line
+	9600 1950 10500 1950
+Wire Wire Line
+	9600 2050 10500 2050
+Wire Wire Line
+	9600 2150 10500 2150
+Wire Wire Line
+	9600 2650 10500 2650
+Wire Wire Line
+	9600 2750 10500 2750
+Wire Wire Line
+	9600 2850 10500 2850
+Wire Wire Line
+	9900 2250 10500 2250
+Wire Wire Line
+	9900 2350 10500 2350
+Wire Wire Line
+	9900 2450 10500 2450
+Text Notes 8400 3150 0    60   ~ 0
+place R15..17 if hardware SPI not possible\nuse software SPI
+Wire Wire Line
+	2600 7450 3350 7450
+Wire Wire Line
+	2600 7350 3350 7350
+Wire Wire Line
+	2600 7250 3350 7250
+Wire Wire Line
+	2600 7150 3350 7150
+Wire Wire Line
+	2600 7050 3350 7050
+Wire Wire Line
+	3550 7050 4200 7050
+Wire Wire Line
+	3550 7150 4200 7150
+Wire Wire Line
+	3550 7250 4200 7250
+Wire Wire Line
+	3550 7350 4200 7350
+Wire Wire Line
+	3550 7450 4200 7450
+Text Notes 3050 7750 0    60   ~ 0
+place R10..14 if \nlevel shifter not used
+Wire Wire Line
+	2100 5200 2100 5100
+Connection ~ 2100 5200
+Wire Wire Line
+	2100 5400 2100 5200
+Wire Wire Line
+	2100 4900 2100 4850
+Wire Wire Line
+	2100 5600 2100 5700
+Wire Wire Line
+	2100 6100 2100 6200
+Wire Wire Line
+	2100 6600 2100 6700
+Wire Wire Line
+	1450 7200 2100 7200
+Wire Wire Line
+	2100 7200 2100 7100
+Wire Wire Line
+	1450 6700 2100 6700
+Connection ~ 2100 6700
+Wire Wire Line
+	2100 6700 2100 6900
+Wire Wire Line
+	1450 6200 2100 6200
+Connection ~ 2100 6200
+Wire Wire Line
+	2100 6200 2100 6400
+Wire Wire Line
+	1450 5700 2100 5700
+Connection ~ 2100 5700
+Wire Wire Line
+	2100 5700 2100 5900
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R21
+U 1 1 5BEF46DB
+P 2900 3500
+F 0 "R21" H 2930 3520 50  0000 L CNN
+F 1 "1k" H 2930 3460 50  0000 L CNN
+F 2 "resistors:R_0603" H 2900 3350 50  0001 C CNN
+F 3 "" H 2900 3500 50  0000 C CNN
+	1    2900 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L devices:Led_Small D1
+U 1 1 5BEF49F3
+P 3100 3650
+F 0 "D1" V 3146 3582 50  0000 R CNN
+F 1 "150060GS75000" V 3055 3582 50  0000 R CNN
+F 2 "LEDs:LED_0603" V 3100 3650 50  0001 C CNN
+F 3 "" V 3100 3650 50  0000 C CNN
+	1    3100 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR030
+U 1 1 5BEF4BB1
+P 3100 3800
+F 0 "#PWR030" H 3100 3550 50  0001 C CNN
+F 1 "GND" H 3100 3650 50  0000 C CNN
+F 2 "" H 3100 3800 50  0000 C CNN
+F 3 "" H 3100 3800 50  0000 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3500 2600 3500
+Wire Wire Line
+	3000 3500 3100 3500
+Wire Wire Line
+	3100 3500 3100 3550
+Wire Wire Line
+	3100 3750 3100 3800
+Wire Wire Line
+	4650 3550 5100 3550
+Text Notes 7000 6900 0    43   ~ 0
+You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). \nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY \nQUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2  for applicable conditions
+$Comp
+L mechanical-switches:TAST_VER SW1
+U 1 1 5D124A7D
+P 1050 5200
+F 0 "SW1" H 1050 5537 60  0000 C CNN
+F 1 "TAST_VER" H 1050 5431 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182080816" H 1900 5250 60  0001 C CNN
+F 3 "" H 1900 5250 60  0000 C CNN
+	1    1050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-switches:TAST_VER SW2
+U 1 1 5D124E3B
+P 1050 5700
+F 0 "SW2" H 1050 6037 60  0000 C CNN
+F 1 "TAST_VER" H 1050 5931 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182080816" H 1900 5750 60  0001 C CNN
+F 3 "" H 1900 5750 60  0000 C CNN
+	1    1050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-switches:TAST_VER SW3
+U 1 1 5D124EC3
+P 1050 6200
+F 0 "SW3" H 1050 6537 60  0000 C CNN
+F 1 "TAST_VER" H 1050 6431 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182080816" H 1900 6250 60  0001 C CNN
+F 3 "" H 1900 6250 60  0000 C CNN
+	1    1050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-switches:TAST_VER SW4
+U 1 1 5D124F55
+P 1050 6700
+F 0 "SW4" H 1050 7037 60  0000 C CNN
+F 1 "TAST_VER" H 1050 6931 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182080816" H 1900 6750 60  0001 C CNN
+F 3 "" H 1900 6750 60  0000 C CNN
+	1    1050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-switches:TAST_VER SW5
+U 1 1 5D1250D0
+P 1050 7200
+F 0 "SW5" H 1050 7537 60  0000 C CNN
+F 1 "TAST_VER" H 1050 7431 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182080816" H 1900 7250 60  0001 C CNN
+F 3 "" H 1900 7250 60  0000 C CNN
+	1    1050 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-switches:TAST_VER SW6
+U 1 1 5D125154
+P 8450 5900
+F 0 "SW6" H 8450 6237 60  0000 C CNN
+F 1 "TAST_VER" H 8450 6131 60  0000 C CNN
+F 2 "mechanical-switches:WE_430182050816" H 9300 5950 60  0001 C CNN
+F 3 "" H 9300 5950 60  0000 C CNN
+	1    8450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L IC_logic:74xx245 U2
+U 1 1 5D1270F7
+P 3250 6150
+F 0 "U2" H 3450 6937 60  0000 C CNN
+F 1 "74VHC245D" H 3450 6831 60  0000 C CNN
+F 2 "SOIC:SOIC-20_7.5x12.8mm_Pitch1.27mm" H 3550 6000 60  0001 C CNN
+F 3 "" H 3250 6150 60  0000 C CNN
+	1    3250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR031
+U 1 1 5D226BEA
+P 3100 5700
+F 0 "#PWR031" H 3100 5550 50  0001 C CNN
+F 1 "+3V3" V 3115 5828 50  0000 L CNN
+F 2 "" H 3100 5700 50  0000 C CNN
+F 3 "" H 3100 5700 50  0000 C CNN
+	1    3100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5750 3100 5750
+Wire Wire Line
+	3100 5750 3100 5700
+Wire Wire Line
+	3150 6350 3100 6350
+Wire Wire Line
+	3100 6350 3100 6450
+Wire Wire Line
+	3150 6650 3100 6650
+Connection ~ 3100 6650
+Wire Wire Line
+	3100 6650 3100 6700
+Wire Wire Line
+	3150 6550 3100 6550
+Connection ~ 3100 6550
+Wire Wire Line
+	3100 6550 3100 6650
+Wire Wire Line
+	3150 6450 3100 6450
+Connection ~ 3100 6450
+Wire Wire Line
+	3100 6450 3100 6550
+NoConn ~ 3750 6550
+NoConn ~ 3750 6450
+NoConn ~ 3750 6350
+Wire Wire Line
+	4050 5550 4050 5500
+Wire Wire Line
+	4050 5250 4050 5200
+Wire Wire Line
+	3750 5750 3900 5750
+Wire Wire Line
+	3900 5750 3900 5500
+Wire Wire Line
+	3900 5500 4050 5500
+Connection ~ 4050 5500
+Wire Wire Line
+	4050 5500 4050 5450
+Wire Wire Line
+	3750 5650 3850 5650
+Wire Wire Line
+	3850 5650 3850 5200
+Wire Wire Line
+	3850 5200 4050 5200
+Connection ~ 4050 5200
+Wire Wire Line
+	4050 5200 4050 5150
+$Comp
+L MODULE_compute:ARDUINO_ISP CN1
+U 1 1 5D60D7FA
+P 10700 3200
+F 0 "CN1" H 10750 4950 60  0000 L CNN
+F 1 "ARDUINO_ISP" H 10600 600 60  0000 L CNN
+F 2 "MODULE_compute:ARDUINO_ISP_TOP" H 11250 4950 60  0001 C CNN
+F 3 "" H 11350 4000 60  0000 C CNN
+	1    10700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R23
+U 1 1 5D622E19
+P 9650 5500
+F 0 "R23" V 9600 5250 50  0000 L CNN
+F 1 "DNI" V 9700 5600 50  0000 L CNN
+F 2 "resistors:R_0603" H 9650 5350 50  0001 C CNN
+F 3 "" H 9650 5500 50  0000 C CNN
+	1    9650 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L ArduHMIShield-rescue:R_1206-ArduHMIShield-rescue R22
+U 1 1 5D62308D
+P 9650 5400
+F 0 "R22" V 9600 5150 50  0000 L CNN
+F 1 "DNI" V 9700 5500 50  0000 L CNN
+F 2 "resistors:R_0603" H 9650 5250 50  0001 C CNN
+F 3 "" H 9650 5400 50  0000 C CNN
+	1    9650 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 5400 10500 5400
+Wire Wire Line
+	10500 5500 9750 5500
+Text Label 8850 5400 0    60   ~ 0
+ARDU_CLK
+Text Label 8850 5500 0    60   ~ 0
+ARDU_SI
+Text Label 9900 5400 0    60   ~ 0
+ARDU_CLK_3
+Text Label 9900 5500 0    60   ~ 0
+ARDU_SI_3
+Wire Wire Line
+	10400 4450 10400 5700
+Wire Wire Line
+	10500 5700 10400 5700
+Connection ~ 10400 5700
+Wire Wire Line
+	10400 5700 10400 5800
+NoConn ~ 10500 5600
+NoConn ~ 10500 5300
+NoConn ~ 10500 5200
+Wire Wire Line
+	8800 5500 9550 5500
+Wire Wire Line
+	8800 5400 9550 5400
+Text Notes 8400 3350 0    60   ~ 0
+place R22 and R23 to use SPI header
+$Comp
+L MODULE_compute:ARDUINO_MKR CN2
+U 1 1 5F517DCB
+P 5700 6850
+F 0 "CN2" H 5700 7747 60  0000 C CNN
+F 1 "ARDUINO_MKR" H 5700 7641 60  0000 C CNN
+F 2 "MODULE_compute:ARDUINO_MKR_HOLES" H 5600 7500 60  0001 C CNN
+F 3 "" H 5700 6550 60  0000 C CNN
+	1    5700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduHMIShield-rescue:GND-ArduHMIShield-rescue #PWR0109
+U 1 1 5F51E460
+P 6400 7600
+F 0 "#PWR0109" H 6400 7350 50  0001 C CNN
+F 1 "GND" H 6400 7450 50  0000 C CNN
+F 2 "" H 6400 7600 50  0000 C CNN
+F 3 "" H 6400 7600 50  0000 C CNN
+	1    6400 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6500 6400 6500
+Wire Wire Line
+	6400 6500 6400 7600
+NoConn ~ 6300 6300
+$Comp
+L ArduHMIShield-rescue:+5V-ArduHMIShield-rescue #PWR0110
+U 1 1 5F5507AC
+P 6400 6100
+F 0 "#PWR0110" H 6400 5950 50  0001 C CNN
+F 1 "+5V" H 6400 6240 50  0000 C CNN
+F 2 "" H 6400 6100 50  0000 C CNN
+F 3 "" H 6400 6100 50  0000 C CNN
+	1    6400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR0111
+U 1 1 5F552310
+P 6550 6100
+F 0 "#PWR0111" H 6550 5950 50  0001 C CNN
+F 1 "+3V3" V 6565 6228 50  0000 L CNN
+F 2 "" H 6550 6100 50  0000 C CNN
+F 3 "" H 6550 6100 50  0000 C CNN
+	1    6550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6400 6550 6100
+Wire Wire Line
+	6300 6400 6550 6400
+Wire Wire Line
+	6300 6200 6400 6200
+Wire Wire Line
+	6400 6200 6400 6100
+Wire Wire Line
+	6900 6600 6300 6600
+Text Label 6450 6600 0    60   ~ 0
+RESET
+Wire Wire Line
+	6900 7200 6300 7200
+Wire Wire Line
+	6900 7300 6300 7300
+NoConn ~ 6300 6700
+NoConn ~ 6300 6800
+NoConn ~ 6300 6900
+NoConn ~ 6300 7000
+NoConn ~ 6300 7100
+Text Label 6450 7300 0    60   ~ 0
+DIS_SI
+Text Label 6450 7200 0    60   ~ 0
+DIS_CLK
+Wire Wire Line
+	6900 7500 6300 7500
+Wire Wire Line
+	4550 7000 5100 7000
+Wire Wire Line
+	4550 7100 5100 7100
+Text Label 4600 7000 0    60   ~ 0
+DIS_A0
+Text Label 4600 7100 0    60   ~ 0
+DIS_RESET
+Text Label 6450 7500 0    60   ~ 0
+DIS_CS
+Wire Wire Line
+	4550 6900 5100 6900
+Wire Wire Line
+	4550 6500 5100 6500
+Text Label 4600 6500 0    60   ~ 0
+KEYPAD_A0
+Text Label 4600 6900 0    60   ~ 0
+DISPLAY_BL
+NoConn ~ 6300 7400
+NoConn ~ 5100 7200
+NoConn ~ 5100 7300
+NoConn ~ 5100 7400
+NoConn ~ 5100 7500
+NoConn ~ 5100 6600
+NoConn ~ 5100 6700
+NoConn ~ 5100 6800
+NoConn ~ 5100 6200
+NoConn ~ 5100 6300
+NoConn ~ 5100 6400
+$Comp
+L devices:Label L1
+U 1 1 5F4DC93F
+P 10700 650
+F 0 "L1" H 10928 703 60  0000 L CNN
+F 1 "Label" H 10928 597 60  0000 L CNN
+F 2 "labels:generationmake_logo" H 10928 544 60  0001 L CNN
+F 3 "" H 10700 650 60  0000 C CNN
+	1    10700 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L devices:Label L2
+U 1 1 5F4DD031
+P 10700 1000
+F 0 "L2" H 10928 1053 60  0000 L CNN
+F 1 "Label" H 10928 947 60  0000 L CNN
+F 2 "labels:generationmake_logo" H 10928 894 60  0001 L CNN
+F 3 "" H 10700 1000 60  0000 C CNN
+	1    10700 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 3150 3550 0    60   ~ 0
+LED green
+$EndSCHEMATC
